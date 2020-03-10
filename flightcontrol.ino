@@ -76,6 +76,7 @@ void setup(){
     delayMicroseconds(3000);                                                //Wait 3000us.
   }
 
+  // so this no perfect because non research from 2017 after finish collage
   //Let's take multiple gyro data samples so we can determine the average gyro offset (calibration).
   for (cal_int = 0; cal_int < 2000 ; cal_int ++){                           //Take 2000 readings for calibration.
     if(cal_int % 15 == 0)digitalWrite(12, !digitalRead(12));                //Change the led status to indicate calibration.
